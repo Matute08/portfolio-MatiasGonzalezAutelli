@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+💻 Sobre mí
+¡Hola! Soy un estudiante avanzado de Ingeniería en Sistemas de Información con una gran pasión por el desarrollo Front-End y la tecnología. Actualmente, me encuentro en la recta final de mi carrera y en búsqueda de mi primera experiencia laboral en el sector IT.
 
-## Getting Started
+Me especializo en tecnologías como JavaScript, TypeScript, React, HTML y CSS, y tengo experiencia trabajando en entornos ágiles con SCRUM, JIRA y Git. Me destaco por mi actitud proactiva, atención al detalle y capacidad para trabajar en equipo, siempre buscando soluciones eficientes y orientadas a resultados.
 
-First, run the development server:
+Estoy entusiasmado por aplicar mis conocimientos y seguir aprendiendo en un entorno dinámico y colaborativo. 🚀
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🔧 Tecnologías y habilidades
+🖥️ Front-End
+✅ React.js | HTML | JavaScript | TypeScript | Bootstrap | Material UI | CSS / SCSS
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+⚙️ Back-End
+✅ C# | SQL | Java
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🛠️ Otras habilidades
+✅ Metodologías ágiles (SCRUM) | Trabajo en equipo | Comunicación efectiva | Resolución de problemas
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📌 Proyectos Académicos
+Proyecto Final – Ingeniería en Sistemas de Información (2024) | Desarrollador Front-End
+Diseñé y desarrollé la interfaz de usuario con React.js, HTML y SCSS, asegurando una experiencia intuitiva y responsive.
 
-## Learn More
+Trabajé en un equipo ágil bajo la metodología SCRUM, gestionando tareas con JIRA.
 
-To learn more about Next.js, take a look at the following resources:
+Implementé control de versiones con Git, garantizando una administración eficiente del código.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Participé en la integración con el Back-End desarrollado en C#, contribuyendo a la toma de decisiones técnicas.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📫 ¡Estoy abierto a nuevas oportunidades! Si deseas ponerte en contacto, puedes encontrarme en [tu correo/linkedin/github].

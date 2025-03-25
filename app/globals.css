@@ -3,7 +3,17 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary: #FF6363;
+  --secondary: #f5741c;
+  --darkBg: "#131424",
+}
 
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background-color: #f5741c;
+}
 
 html,body {
   color: #fff;
