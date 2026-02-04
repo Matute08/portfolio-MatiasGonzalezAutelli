@@ -3,33 +3,40 @@ import {
     CodeSquare,
     HomeIcon,
     UserRound,
-    Pencil,
-    Computer,
-    Book,
-    Rocket,
+    Briefcase,
+    Code,
+    Layers,
+    Smartphone,
+    GitBranch,
     Mail,
     MessageCircle,
-    Linkedin
+    Linkedin,
+    Github
 } from "lucide-react";
 
 
 export const socialNetworks = [
     {
         id: 1,
-        logo: <Linkedin size={25} strokeWidth={1}/>,
+        logo: <Linkedin size={25} strokeWidth={1} />,
         src: "https://www.linkedin.com/in/matiasgonzalezautelli",
     },
     {
         id: 2,
-        logo: <Mail size={25} strokeWidth={1} />,
-        src: "https://mailto:matutegon97@gmail.com",
+        logo: <Github size={25} strokeWidth={1} />,
+        src: "https://github.com/Matute08",
     },
     {
         id: 3,
+        logo: <Mail size={25} strokeWidth={1} />,
+        src: "mailto:matutegon97@gmail.com",
+    },
+    {
+        id: 4,
         logo: <MessageCircle size={25} strokeWidth={1} />,
         src: "https://wa.me/542954545062",
     },
-    
+
 ];
 
 export const itemsNavbar = [
@@ -41,126 +48,86 @@ export const itemsNavbar = [
     },
     {
         id: 2,
-        title: "User",
+        title: "Sobre mí",
         icon: <UserRound size={25} color="#fff" strokeWidth={1} />,
         link: "/about-me",
     },
     {
         id: 3,
-        title: "Book",
+        title: "Servicios",
         icon: <BookText size={25} color="#fff" strokeWidth={1} />,
         link: "/services",
     },
     {
         id: 4,
-        title: "Target",
+        title: "Portfolio",
         icon: <CodeSquare size={25} color="#fff" strokeWidth={1} />,
         link: "/portfolio",
     },
-    // {
-    //     id: 5,
-    //     title: "Home",
-    //     icon: <Speech size={25} color="#fff" strokeWidth={1} />,
-    //     link: "/testimonials",
-    // },
+];
+
+export const dataWorkExperience = [
+    {
+        id: 1,
+        title: "Pasante Software Engineer Front-end",
+        company: "Bitlogic S.A.",
+        description: "Desarrollo de interfaces para Teclab, plataforma educativa líder con +500.000 estudiantes en Argentina, Chile y México. Responsable de migrar componentes legacy de Vue 2 a Vue 3, implementar nuevas funcionalidades y gestionar despliegues en ambientes Dev, QA y Producción utilizando AWS CodeCommit.",
+        date: "Junio 2025 - Actualidad",
+        technologies: ["Vue.js 2 & 3", "JavaScript", "SCSS", "Git", "AWS CodeCommit", "JIRA"],
+    },
 ];
 
 export const dataAboutPage = [
     {
         id: 1,
-        title: "Ingenieria en Sistemas de Información", 
+        title: "Ingeniería en Sistemas de Información",
         subtitle: "UTN - Facultad Regional Córdoba",
         description:
-            "Estudiante de Ingeniería en Sistemas de Información con 4 finales restantes y un promedio de 8,42.",
-        date: "02/2017 - En curso",
+            "Cursado finalizado. 2 finales restantes para obtener el título de Ingeniero en Sistemas de Información.",
+        date: "02/2017 - Actual",
     },
     {
         id: 2,
         title: "Desarrollador Front-end",
         subtitle: "CoderHouse",
         description:
-            "Finalice con éxito los cursos de: Desarrollo Web, JavaScript y React JS",
-        date: "08/22 - 03/23",
+            "Finalicé con éxito los cursos de: Desarrollo Web, JavaScript y React JS.",
+        date: "08/2022 - 03/2023",
     },
     {
         id: 3,
         title: "Bachillerato en Ciencias Sociales",
-        subtitle: "Colegio Clemente Jose Andrada - Santa Rosa La Pampa",
+        subtitle: "Colegio Clemente José Andrada - Santa Rosa, La Pampa",
         description:
             "Estudios secundarios completos con orientación en Ciencias Sociales.",
-        date: "03/10 - 12/15",
-    },
-    // {
-    //     id: 4,
-    //     title: "Prácticas Grado",
-    //     subtitle: "WebWizards Inc.",
-    //     description:
-    //         "Únete a nosotros mientras creamos sitios web y aplicaciones interactivas que sorprenden y deleitan a nuestros clientes. Si tienes pasión por el diseño y la programación, y disfrutas colaborar en un entorno creativo, ¡queremos conocerte!        ",
-    //     date: "Mar 2018",
-    // },
-];
-
-export const dataCounter = [
-    {
-        id: 0,
-        endCounter: 10,
-        text: "Años de experiencia",
-        lineRight: true,
-        lineRightMobile: true,
-    },
-    {
-        id: 1,
-        endCounter: 80,
-        text: "Clientes satisfechos",
-        lineRight: true,
-        lineRightMobile: false,
-    },
-    {
-        id: 2,
-        endCounter: 220,
-        text: "Proyectos finalizados",
-        lineRight: true,
-        lineRightMobile: true,
-    },
-    {
-        id: 3,
-        endCounter: 30,
-        text: "Premios ganadores",
-        lineRight: false,
-        lineRightMobile: false,
+        date: "03/2010 - 12/2015",
     },
 ];
 
 export const serviceData = [
     {
-        icon: <img src="/tailwind.png" alt="HTML Icon" style={{ width: 25, height: 25 }} />,
-        title: "Branding",
+        icon: <Code />,
+        title: "Desarrollo Front-end",
         description:
-            "Desarrollo de una identidad de marca sólida y coherente, incluyendo diseño de logotipo, colores y elementos visuales",
+            "Construcción de interfaces de usuario modernas utilizando Vue.js y React. Código limpio, componentes reutilizables y arquitectura escalable para proyectos de cualquier tamaño.",
     },
     {
-        icon: <Pencil />,
-        title: "Diseño web",
+        icon: <Layers />,
+        title: "Integración con Back-end",
         description:
-            "Diseño creativo y profesional de interfaces web intuitivas y atractivas, centradas en la experiencia del usuario",
+            "Conexión fluida entre el front-end y servicios REST/GraphQL. Experiencia integrando APIs complejas, manejo de estados y optimización de llamadas al servidor.",
     },
     {
-        icon: <Computer />,
-        title: "Desarrollo web",
+        icon: <Smartphone />,
+        title: "Mobile-First Design",
         description:
-            "Diseño y desarrollo de sitios web a medida, adaptados a tus necesidades",
+            "Desarrollo con enfoque mobile-first garantizando experiencias perfectas en cualquier dispositivo. Performance optimizado y accesibilidad incluida.",
     },
     {
-        icon: <Book />,
-        title: "Copywriting",
+        icon: <GitBranch />,
+        title: "DevOps & Deployment",
         description:
-            "Creación de contenido persuasivo y atractivo que capta la atención de tu audiencia",
-    },
-    {
-        icon: <Rocket />,
-        title: "SEO",
-        description:
-            "Optimización de tu presencia en línea mediante estrategias de SEO avanzadas, ",
+            "Gestión profesional con Git, CI/CD pipelines y despliegues automatizados. Experiencia real en entornos de desarrollo, QA y producción.",
     },
 ];
 
@@ -168,174 +135,152 @@ export const dataPortfolio = [
     {
         id: 1,
         title: "Amigos Peludos",
-        image: "/amigosPeludos.jpg",
-        description: "Plataforma para adopción y cuidado de mascotas, desarrollada como Proyecto Final de Ingeniería en Sistemas.",
+        image: "/images/projects/amigos-peludos/amigosPeludos.jpg",
+        description: "Proyecto Final de Ingeniería en Sistemas. Plataforma para adopción y búsqueda de mascotas perdidas con modelo de Visión Artificial (Hugging Face) para reconocimiento mediante imágenes.",
         urlGithub: "https://github.com/Matute08/ProyectoFinal_ISI_UTN_FRC_AmigosPeludos",
         urlDemo: "https://amigos-peludos.vercel.app/",
+        tags: ["Vue.js", "Python", "IA", "Hugging Face"],
+        featured: true,
     },
     {
         id: 2,
-        title: "PC-Gaming",
-        image: "/pc-gaming.jpg",
-        description: "E-commerce ficticio de componentes de PC, creada durante el curso de JavaScript en CoderHouse.",
-        urlGithub: "https://github.com/Matute08/ProyectoFinal-JavaScript-CoderHouse-",
-        urlDemo: "https://matute08.github.io/ProyectoFinal-JavaScript-CoderHouse-/",
+        title: "MisGastos",
+        image: "/images/projects/mis-gastos/mis-gastos.jpg",
+        description: "Aplicación personal de gestión financiera con dashboard interactivo, control de gastos mensuales, categorización y visualización de datos.",
+        urlGithub: "https://github.com/Matute08/MisGastos",
+        urlDemo: "https://mis-gastos-phi.vercel.app/",
+        tags: ["React", "Next.js", "Dashboard"],
+        featured: true,
     },
     {
         id: 3,
-        title: "BeFit",
-        image: "/befit.jpg",
-        description: "Sitio web estatico sobre entrenamiento funcional a unos amigos, diseñado como proyecto personal.",
-        urlGithub: "https://github.com/Matute08/BeFit",
-        urlDemo: "https://matute08.github.io/BeFit/index.html",
+        title: "Rifas Zapataye",
+        image: "/images/projects/rifas-zapataye/rifas-zapataye.jpg",
+        description: "Sistema de sorteos para mi equipo de fútbol. Gestión de rifas semestrales con interfaz intuitiva para carga de participantes y sorteo animado.",
+        urlGithub: "https://github.com/Matute08/rifas-zapataye",
+        urlDemo: "https://rifas-zapataye.vercel.app/",
+        tags: ["React", "Vercel"],
+        featured: false,
     },
     {
         id: 4,
+        title: "BeFit",
+        image: "/images/projects/befit/befit.jpg",
+        description: "Mi primer proyecto real para un cliente. Sitio web para centro de entrenamiento funcional de amigos profesores de educación física.",
+        urlGithub: "https://github.com/Matute08/BeFit",
+        urlDemo: "https://matute08.github.io/BeFit/index.html",
+        tags: ["HTML", "CSS", "JavaScript"],
+        featured: false,
+    },
+    {
+        id: 5,
         title: "BusCatDog",
-        image: "/buscatdog.jpg",
-        description: "Página web para búsqueda de mascotas perdidas, creada durante el curso de Desarrollo Web en CoderHouse.",
+        image: "/images/projects/buscatdog/buscatdog.jpg",
+        description: "El origen de Amigos Peludos. Plataforma para publicar mascotas perdidas creada en CoderHouse que evolucionó en mi proyecto de tesis.",
         urlGithub: "https://github.com/Matute08/ProyectoFinal-DesarrolloWeb-CoderHouse",
         urlDemo: "https://matute08.github.io/ProyectoFinal-DesarrolloWeb-CoderHouse/index.html",
+        tags: ["HTML", "CSS", "JavaScript"],
+        featured: false,
     },
 ];
 
 
 export const technicalSkillsFront = [
     {
-        icon: <img src="/html.png" alt="HTML Icon" style={{ width: 25, height: 25 }} />,
+        icon: <img src="/images/skills/html.png" alt="HTML" style={{ width: 25, height: 25 }} />,
         title: "HTML",
-        description: "Descripcion del uso de HTML",
         number: 5,
     },
     {
-        icon: <img src="/css.png" alt="HTML Icon" style={{ width: 25, height: 25 }} />,
-        title: "CSS",
+        icon: <img src="/images/skills/css.png" alt="CSS" style={{ width: 25, height: 25 }} />,
+        title: "CSS / SCSS",
         number: 5,
     },
     {
-        icon:<img src="/js.png" alt="HTML Icon" style={{ width: 25, height: 25 }} />,
+        icon: <img src="/images/skills/js.png" alt="JavaScript" style={{ width: 25, height: 25 }} />,
         title: "JavaScript",
-        number: 3,
+        number: 4,
     },
     {
-        icon: <img src="/react.png" alt="HTML Icon" style={{ width: 25, height: 25 }} />,
+        icon: <img src="/images/skills/vue.png" alt="Vue.js" style={{ width: 25, height: 25 }} />,
+        title: "Vue.js",
+        number: 4,
+    },
+    {
+        icon: <img src="/images/skills/react.png" alt="React" style={{ width: 25, height: 25 }} />,
         title: "React JS",
         number: 3,
     },
     {
-        icon: <img src="/bootstrap.png" alt="HTML Icon" style={{ width: 25, height: 25 }} />,
-        title: "Bootstrap",
-        number: 3,
-    },
-    {
-        icon: <img src="/tailwind.png" alt="HTML Icon" style={{ width: 25, height: 25 }} />,
+        icon: <img src="/images/skills/tailwind.png" alt="Tailwind CSS" style={{ width: 25, height: 25 }} />,
         title: "Tailwind CSS",
         number: 3,
     },
 ];
+
 export const technicalSkillsBack = [
     {
-        icon: <img src="/c.png" alt="HTML Icon" style={{ width: 25, height: 25 }} />,
+        icon: <img src="/images/skills/c.png" alt="C#" style={{ width: 25, height: 25 }} />,
         title: "C#",
         number: 3,
-
-        
     },
     {
-        icon: <img src="/sql.png" alt="HTML Icon" style={{ width: 25, height: 25 }} />,
-        title: "SQL",
-        number: 3,
-
-        
-    },
-    {
-        icon: <img src="/java.png" alt="HTML Icon" style={{ width: 25, height: 25 }} />,
-        title:"Java",
+        icon: <img src="/images/skills/java.png" alt="Java" style={{ width: 25, height: 25 }} />,
+        title: "Java",
         number: 2,
-
-        
-    },  
-];
-export const technicalSkillsProductivity = [
+    },
     {
-        icon: <img src="/git.png" alt="HTML Icon" style={{ width: 25, height: 25 }} />,
+        icon: <img src="/images/skills/python.png" alt="Python" style={{ width: 25, height: 25 }} />,
+        title: "Python",
+        number: 2,
+    },
+    {
+        icon: <img src="/images/skills/sql.png" alt="SQL" style={{ width: 25, height: 25 }} />,
+        title: "SQL Server / MySQL",
+        number: 3,
+    },
+];
+
+export const technicalSkillsTools = [
+    {
+        icon: <img src="/images/skills/git.png" alt="Git" style={{ width: 25, height: 25 }} />,
         title: "Git",
         number: 4,
-
     },
     {
-        icon: <img src="/excel.png" alt="HTML Icon" style={{ width: 25, height: 25 }} />,
-        title: "Excel",
-        number: 4,
-
+        icon: <img src="/images/skills/aws.png" alt="AWS" style={{ width: 25, height: 25 }} />,
+        title: "AWS CodeCommit",
+        number: 3,
     },
     {
-        icon: <img src="/word.png" alt="HTML Icon" style={{ width: 25, height: 25 }} />,
-        title: "Word",
+        icon: <img src="/images/skills/jira.png" alt="JIRA" style={{ width: 25, height: 25 }} />,
+        title: "JIRA",
+        number: 3,
+    },
+    {
+        icon: <img src="/images/skills/scrum.png" alt="SCRUM" style={{ width: 25, height: 25 }} />,
+        title: "SCRUM",
         number: 4,
-
     },
 ];
+
 export const softSkills = [
     {
         title: "Comunicación efectiva",
-        
     },
     {
         title: "Trabajo en equipo",
     },
     {
-        title: "Metodologias Agiles",
+        title: "Metodologías Ágiles",
     },
     {
-        title: "SCRUM",
+        title: "Resolución de problemas",
     },
     {
         title: "Adaptabilidad",
     },
+    {
+        title: "Inglés técnico",
+    },
 ];
-
-// export const dataTestimonials = [
-//     {
-//         id: 1,
-//         name: "George Snow",
-//         description:
-//             "¡Increíble plataforma! Los testimonios aquí son genuinos y me han ayudado a tomar decisiones informadas. ¡Altamente recomendado!",
-//         imageUrl: "/profile1.png",
-//     },
-//     {
-//         id: 2,
-//         name: "Juan Pérez",
-//         description:
-//             "Me encanta la variedad de testimonios disponibles en esta página. Es inspirador ver cómo otras personas han superado desafíos similares a los míos. ¡Gracias por esta invaluable fuente de motivación!",
-//         imageUrl: "/profile2.png",
-//     },
-//     {
-//         id: 3,
-//         name: "María García",
-//         description:
-//             "Excelente recurso para obtener opiniones auténticas sobre diferentes productos y servicios. Me ha ayudado mucho en mis compras en línea. ¡Bravo por este sitio!",
-//         imageUrl: "/profile3.png",
-//     },
-//     {
-//         id: 4,
-//         name: "Laura Snow",
-//         description:
-//             "¡Qué descubrimiento tan fantástico! Los testimonios aquí son honestos y detallados. Me siento más seguro al tomar decisiones después de leer las experiencias compartidas por otros usuarios.",
-//         imageUrl: "/profile4.png",
-//     },
-//     {
-//         id: 5,
-//         name: "Carlos Sánchez",
-//         description:
-//             "Una joya en la web. Los testimonios son fáciles de encontrar y están bien organizados. ¡Definitivamente mi destino número uno cuando necesito referencias confiables!",
-//         imageUrl: "/profile5.png",
-//     },
-//     {
-//         id: 6,
-//         name: "Antonio Martínez",
-//         description:
-//             "¡Fantástico recurso para aquellos que buscan validación antes de tomar decisiones importantes! Los testimonios aquí son veraces y realmente útiles. ¡Gracias por simplificar mi proceso de toma de decisiones!",
-//         imageUrl: "/profile6.png",
-//     },
-// ];

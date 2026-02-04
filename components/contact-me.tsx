@@ -6,32 +6,34 @@ import emailjs from '@emailjs/browser';
 const ContactMe = () => {
 
     const form = useRef<HTMLFormElement>(null);
+
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         emailjs
-        .sendForm('service_5omf06d', 'template_7cer9cf', form.current!, {
-          publicKey: 'snCbtxVCdNEhQoULh',
-        })
-        .then(
-          () => {
-            console.log('SUCCESS!');
-            notificacionMail("Mail enviado");
-          },
-          (error) => {
-            console.log('FAILED...', error.text);
-            notificacionError("Error al Enviar Mail")
-          },
-        );
-
-
-
+            .sendForm(
+                process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+                process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+                form.current!,
+                { publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY! }
+            )
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                    notificacionMail("Mail enviado");
+                    form.current?.reset();
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                    notificacionError("Error al Enviar Mail")
+                },
+            );
     };
 
 
     return (
         <div className="w-full isolate px-6 mb-30 lg:px-4 flex justify-center">
             <form
-                ref={form} 
+                ref={form}
                 onSubmit={(e) => {
                     e.preventDefault();
                     const formElements = form.current?.elements as HTMLFormControlsCollection;
@@ -46,9 +48,7 @@ const ContactMe = () => {
 
                     handleSubmit(e);
                 }}
-                action="#"
-                method="POST"
-                className=" mt-8 sm:mt-8 w-full"
+                className="mt-8 sm:mt-8 w-full"
             >
                 <div className="grid grid-cols-1 gap-x-8 gap-y-6">
                     <div className="sm:col-span-2">
@@ -68,8 +68,8 @@ const ContactMe = () => {
                             />
                         </div>
                     </div>
-                    
-                    
+
+
                     <div className="sm:col-span-2">
                         <label
                             htmlFor="email"
@@ -87,13 +87,13 @@ const ContactMe = () => {
                             />
                         </div>
                     </div>
-                    
+
                     <div className="sm:col-span-2">
                         <label
                             htmlFor="message"
                             className="block text-1xl font-semibold text-[var(--secondary)]"
                         >
-                            Message <span className="text-red-500">*</span>
+                            Mensaje <span className="text-red-500">*</span>
                         </label>
                         <div className="mt-2.5">
                             <textarea
@@ -105,7 +105,7 @@ const ContactMe = () => {
                             />
                         </div>
                     </div>
-                    
+
                 </div>
                 <div className="mt-10">
                     <button

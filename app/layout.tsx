@@ -1,22 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Urbanist } from "next/font/google";
-
+import { Urbanist } from "next/font/google";
 
 import "./globals.css";
-import "swiper/css"
-import "swiper/css/pagination"
-import "swiper/css/scrollbar"
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
 import Navbar from "../components/navbar";
 import Header from "@/components/header";
+import CoverParticles from "@/components/cover-particles";
 
 const urbanist = Urbanist({
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "MatiasGonzalezAutelli - Portfolio",
-  description: "Portfolio of Matias Gonzalez Autelli",
+  title: "Matias Gonzalez Autelli | Software Engineer Front-end",
+  description: "Portfolio de Matias Gonzalez Autelli - Software Engineer Front-end especializado en Vue.js y React. Desarrollo de interfaces modernas y escalables.",
 };
 
 export default function RootLayout({
@@ -25,11 +25,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${urbanist.className} ${urbanist.className} antialiased`}>
-          <Navbar />
-          <Header />
+    <html lang="es">
+      <body className={`${urbanist.className} antialiased`}>
+        <CoverParticles />
+        <Navbar />
+        <Header />
         {children}
       </body>
     </html>
