@@ -1,5 +1,5 @@
 import { dataPortfolio } from "@/data";
-import TransitionPage from "@/components/transition-page";
+import TransitionPage from "@/components/animations/transition-page/transition-page";
 import { Github, ExternalLink, Star } from "lucide-react";
 import Image from "next/image";
 

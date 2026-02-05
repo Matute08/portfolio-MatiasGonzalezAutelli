@@ -1,0 +1,55 @@
+import type { PortfolioItem } from "@/types";
+
+export const dataPortfolio: PortfolioItem[] = [
+  {
+    id: 1,
+    title: "Amigos Peludos",
+    image: "/images/projects/amigos-peludos/amigosPeludos.jpg",
+    description: "Proyecto Final de Ingeniería en Sistemas. Plataforma para adopción y búsqueda de mascotas perdidas con modelo de Visión Artificial (Hugging Face) para reconocimiento mediante imágenes.",
+    urlGithub: "https://github.com/Matute08/ProyectoFinal_ISI_UTN_FRC_AmigosPeludos",
+    urlDemo: "https://amigos-peludos.vercel.app/",
+    tags: ["Vue.js", "Python", "IA", "Hugging Face"],
+    featured: true,
+  },
+  {
+    id: 2,
+    title: "MisGastos",
+    image: "/images/projects/mis-gastos/mis-gastos.jpg",
+    description: "Aplicación personal de gestión financiera con dashboard interactivo, control de gastos mensuales, categorización y visualización de datos.",
+    urlGithub: "https://github.com/Matute08/MisGastos",
+    urlDemo: "https://mis-gastos-phi.vercel.app/",
+    tags: ["React", "Next.js", "Dashboard"],
+    featured: true,
+  },
+  {
+    id: 3,
+    title: "Rifas Zapataye",
+    image: "/images/projects/rifas-zapataye/rifas-zapataye.jpg",
+    description: "Sistema de sorteos para mi equipo de fútbol. Gestión de rifas semestrales con interfaz intuitiva para carga de participantes y sorteo animado.",
+    urlGithub: "https://github.com/Matute08/rifas-zapataye",
+    urlDemo: "https://rifas-zapataye.vercel.app/",
+    tags: ["React", "Vercel"],
+    featured: false,
+  },
+  {
+    id: 4,
+    title: "BeFit",
+    image: "/images/projects/befit/befit.jpg",
+    description: "Mi primer proyecto real para un cliente. Sitio web para centro de entrenamiento funcional de amigos profesores de educación física.",
+    urlGithub: "https://github.com/Matute08/BeFit",
+    urlDemo: "https://matute08.github.io/BeFit/index.html",
+    tags: ["HTML", "CSS", "JavaScript"],
+    featured: false,
+  },
+  {
+    id: 5,
+    title: "BusCatDog",
+    image: "/images/projects/buscatdog/buscatdog.jpg",
+    description: "El origen de Amigos Peludos. Plataforma para publicar mascotas perdidas creada en CoderHouse que evolucionó en mi proyecto de tesis.",
+    urlGithub: "https://github.com/Matute08/ProyectoFinal-DesarrolloWeb-CoderHouse",
+    urlDemo: "https://matute08.github.io/ProyectoFinal-DesarrolloWeb-CoderHouse/index.html",
+    tags: ["HTML", "CSS", "JavaScript"],
+    featured: false,
+  },
+];
+

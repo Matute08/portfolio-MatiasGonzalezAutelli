@@ -1,0 +1,33 @@
+"use client";
+import { itemsNavbar } from "@/data/client";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
+import MotionTransition from "@/components/animations/transition-component/transition-component";
+
+const Navbar = () => {
+  const router = usePathname();
+  return (
+    <MotionTransition
+      position="right"
+      className="fixed z-40 flex flex-col items-center justify-center w-full mt-auto h-max bottom-2 sm:bottom-10"
+    >
+      <nav>
+        <div className="flex items-center justify-center gap-2 px-4 py-1 rounded-full bg-white/15 backdrop-blur-sm">
+          {itemsNavbar.map((item) => (
+            <div
+              key={item.id}
+              className={`px-3 py-2 transition duration-150 rounded-full cursor-pointer hover:bg-[var(--secondary)] ${
+                router === item.link && "bg-[var(--secondary)]"
+              }`}
+            >
+              <Link href={item.link}>{item.icon}</Link>
+            </div>
+          ))}
+        </div>
+      </nav>
+    </MotionTransition>
+  );
+};
+
+export default Navbar;
+

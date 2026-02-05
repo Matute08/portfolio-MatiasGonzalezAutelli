@@ -1,5 +1,7 @@
-import TransitionPage from "@/components/transition-page";
-import { serviceData } from "@/data";
+"use client";
+
+import TransitionPage from "@/components/animations/transition-page/transition-page";
+import { serviceData } from "@/data/client";
 import { ArrowRight, CheckCircle, MessageCircle, Mail } from "lucide-react";
 
 const ServicesPage = () => {

@@ -1,5 +1,8 @@
-import TransitionPage from "@/components/transition-page";
-import { dataWorkExperience, dataAboutPage, technicalSkillsFront, technicalSkillsBack, technicalSkillsTools } from "@/data";
+"use client";
+
+import TransitionPage from "@/components/animations/transition-page/transition-page";
+import { dataWorkExperience, dataAboutPage } from "@/data";
+import { technicalSkillsFront, technicalSkillsBack, technicalSkillsTools } from "@/data/client";
 import { Briefcase, GraduationCap, Calendar, MapPin, Users, Target, Zap, MessageSquare } from "lucide-react";
 
 const PageAboutMe = () => {
