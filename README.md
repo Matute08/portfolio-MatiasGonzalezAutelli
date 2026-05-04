@@ -133,6 +133,4 @@ Sistema de sorteos para equipo de fútbol. Gestión de rifas semestrales con int
 
 **"Transformando ideas en experiencias digitales"** 🚀
 
-⭐ Si te gusta mi trabajo, no dudes en darle una estrella a mis repositorios
-
 </div>
