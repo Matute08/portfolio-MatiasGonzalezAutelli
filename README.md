@@ -17,14 +17,6 @@ Soy un **Software Engineer Front-end** apasionado por crear interfaces modernas,
 
 Mi enfoque está en transformar ideas en experiencias digitales que impacten positivamente a los usuarios, combinando diseño moderno, código limpio y mejores prácticas de desarrollo.
 
-### 📊 GitHub Stats
-
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Matute08&show_icons=true&theme=radical&hide_border=true&count_private=true)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Matute08&layout=compact&theme=radical&hide_border=true)
-
-</div>
 
 ## 💼 Experiencia Profesional
 
