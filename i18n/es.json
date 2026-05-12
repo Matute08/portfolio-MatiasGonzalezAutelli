@@ -1,0 +1,66 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Trayectoria",
+    "services": "Servicios",
+    "skills": "Habilidades",
+    "portfolio": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "badge": "Disponible para proyectos",
+    "greeting": "Hola, soy",
+    "typing_prefix": "Transformando ideas en",
+    "typing": ["interfaces modernas", "experiencias únicas", "código de calidad", "productos reales"],
+    "description": "Software Engineer Front-end especializado en Vue.js y React. Creo interfaces modernas, escalables y centradas en la experiencia del usuario.",
+    "cta_projects": "Ver Proyectos",
+    "cta_contact": "Contactarme"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "subtitle": "Mi trayectoria profesional",
+    "description": "Soy Software Engineer Front-end apasionado por crear interfaces modernas y funcionales. Actualmente trabajo en Bitlogic S.A. desarrollando para Teclab, una plataforma educativa con más de 500.000 estudiantes en Latinoamérica. Me especializo en Vue.js y React, y estoy próximo a obtener mi título de Ingeniero en Sistemas en la UTN.",
+    "experience_title": "Experiencia",
+    "education_title": "Formación",
+    "present": "Actualidad"
+  },
+  "services": {
+    "title": "Servicios",
+    "subtitle": "Lo que puedo hacer por ti"
+  },
+  "skills": {
+    "title": "Habilidades",
+    "subtitle": "Tecnologías y herramientas que domino",
+    "frontend": "Front-end",
+    "backend": "Back-end",
+    "tools": "Herramientas",
+    "soft_skills": "Habilidades Blandas"
+  },
+  "portfolio": {
+    "title": "Proyectos",
+    "subtitle": "Trabajos seleccionados",
+    "view_github": "Ver código",
+    "view_demo": "Demo en vivo",
+    "featured": "Destacado",
+    "all": "Todos"
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "¿Tenés un proyecto en mente? Hablemos",
+    "name": "Nombre",
+    "email": "Email",
+    "message": "Mensaje",
+    "send": "Enviar Mensaje",
+    "sending": "Enviando...",
+    "success": "¡Mensaje enviado con éxito!",
+    "error": "Error al enviar el mensaje",
+    "required": "Todos los campos son obligatorios",
+    "placeholder_name": "Tu nombre",
+    "placeholder_email": "tu@email.com",
+    "placeholder_message": "Contame sobre tu proyecto..."
+  },
+  "footer": {
+    "copyright": "Todos los derechos reservados",
+    "available": "Disponible para oportunidades laborales"
+  }
+}

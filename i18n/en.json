@@ -1,0 +1,66 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "skills": "Skills",
+    "portfolio": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Available for projects",
+    "greeting": "Hi, I'm",
+    "typing_prefix": "Turning ideas into",
+    "typing": ["modern interfaces", "unique experiences", "quality code", "real products"],
+    "description": "Front-end Software Engineer specialized in Vue.js and React. I build modern, scalable interfaces focused on user experience.",
+    "cta_projects": "View Projects",
+    "cta_contact": "Contact Me"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "My professional journey",
+    "description": "I'm a Front-end Software Engineer passionate about building modern and functional interfaces. I currently work at Bitlogic S.A. developing for Teclab, an educational platform with over 500,000 students across Latin America. I specialize in Vue.js and React, and I'm close to earning my Systems Engineering degree at UTN.",
+    "experience_title": "Experience",
+    "education_title": "Education",
+    "present": "Present"
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "What I can do for you"
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "Technologies & tools I master",
+    "frontend": "Front-end",
+    "backend": "Back-end",
+    "tools": "Tools",
+    "soft_skills": "Soft Skills"
+  },
+  "portfolio": {
+    "title": "Projects",
+    "subtitle": "Selected work",
+    "view_github": "View code",
+    "view_demo": "Live demo",
+    "featured": "Featured",
+    "all": "All"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Have a project in mind? Let's talk",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent successfully!",
+    "error": "Error sending message",
+    "required": "All fields are required",
+    "placeholder_name": "Your name",
+    "placeholder_email": "you@email.com",
+    "placeholder_message": "Tell me about your project..."
+  },
+  "footer": {
+    "copyright": "All rights reserved",
+    "available": "Available for work opportunities"
+  }
+}

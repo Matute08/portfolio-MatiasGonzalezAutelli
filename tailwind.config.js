@@ -3,12 +3,12 @@ export default {
     theme: {
       extend: {
         colors: {
-          primary: "#FF6363",
-          secondary: "#f5741c",
-          darkBg: "#131424",
+          primary: "#7C3AED",
+          secondary: "#3B82F6",
+          accent: "#8B5CF6",
+          darkBg: "#0B081A",
         },
       },
     },
     plugins: [],
   };
-  
