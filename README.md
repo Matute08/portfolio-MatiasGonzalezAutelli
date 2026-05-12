@@ -99,16 +99,6 @@ Sistema de sorteos para equipo de fútbol. Gestión de rifas semestrales con int
 - ✅ Adaptabilidad
 - ✅ Inglés técnico
 
-## 📊 Estadísticas de GitHub
-
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Matute08&show_icons=true&theme=dark&hide_border=true&bg_color=1f1934&title_color=f5741c&icon_color=f5741c)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Matute08&layout=compact&theme=dark&hide_border=true&bg_color=1f1934&title_color=f5741c)
-
-</div>
-
 ## 📫 Conectemos
 
 <div align="center">
