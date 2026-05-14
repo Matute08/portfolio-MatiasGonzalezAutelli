@@ -34,7 +34,14 @@
     "frontend": "Front-end",
     "backend": "Back-end",
     "tools": "Herramientas",
-    "soft_skills": "Habilidades Blandas"
+    "testing": "Testing",
+    "soft_skills": "Habilidades Blandas",
+    "levels": {
+      "expert": "Experto",
+      "advanced": "Avanzado",
+      "intermediate": "Intermedio",
+      "basic": "Básico"
+    }
   },
   "portfolio": {
     "title": "Proyectos",

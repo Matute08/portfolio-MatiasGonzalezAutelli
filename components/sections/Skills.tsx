@@ -6,11 +6,19 @@ import {
   technicalSkillsFront,
   technicalSkillsBack,
   technicalSkillsTools,
+  technicalSkillsTesting,
   softSkills,
 } from "@/data/client";
 import { CheckCircle2 } from "lucide-react";
 
-function SkillBar({
+const levelColors: Record<string, string> = {
+  expert: "text-emerald-400 bg-emerald-400/10 border-emerald-400/20",
+  advanced: "text-sky-400 bg-sky-400/10 border-sky-400/20",
+  intermediate: "text-amber-400 bg-amber-400/10 border-amber-400/20",
+  basic: "text-gray-400 bg-white/5 border-white/10",
+};
+
+function SkillItem({
   icon,
   title,
   level,
@@ -18,33 +26,28 @@ function SkillBar({
 }: {
   icon: React.ReactNode;
   title: string;
-  level: number;
+  level: string;
   index: number;
 }) {
+  const { t } = useTranslations();
+
   return (
     <motion.div
       initial={{ opacity: 0, x: -20 }}
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ delay: index * 0.08, duration: 0.4 }}
-      className="group"
+      className="flex items-center gap-3"
     >
-      <div className="flex items-center gap-3 mb-2">
-        <span className="text-gray-400 w-5 h-5 flex items-center justify-center">
-          {icon}
-        </span>
-        <span className="text-sm font-medium text-gray-300">{title}</span>
-        <span className="ml-auto text-xs text-gray-500">{level}/5</span>
-      </div>
-      <div className="h-1.5 rounded-full bg-white/5 overflow-hidden">
-        <motion.div
-          initial={{ width: 0 }}
-          whileInView={{ width: `${(level / 5) * 100}%` }}
-          viewport={{ once: true }}
-          transition={{ delay: index * 0.08 + 0.3, duration: 0.8, ease: "easeOut" }}
-          className="h-full rounded-full bg-gradient-to-r from-primary to-secondary"
-        />
-      </div>
+      <span className="text-gray-400 w-5 h-5 flex items-center justify-center shrink-0">
+        {icon}
+      </span>
+      <span className="text-sm font-medium text-gray-300">{title}</span>
+      <span
+        className={`ml-auto text-[11px] font-medium px-2 py-0.5 rounded-full border ${levelColors[level] || levelColors.basic}`}
+      >
+        {t(`skills.levels.${level}`)}
+      </span>
     </motion.div>
   );
 }
@@ -56,6 +59,7 @@ export default function Skills() {
     { title: t("skills.frontend"), data: technicalSkillsFront },
     { title: t("skills.backend"), data: technicalSkillsBack },
     { title: t("skills.tools"), data: technicalSkillsTools },
+    { title: t("skills.testing"), data: technicalSkillsTesting },
   ];
 
   return (
@@ -78,7 +82,7 @@ export default function Skills() {
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary rounded-full mx-auto mt-6" />
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-8">
           {categories.map((cat, ci) => (
             <motion.div
               key={ci}
@@ -91,13 +95,13 @@ export default function Skills() {
               <h3 className="text-lg font-semibold text-white mb-6 pb-4 border-b border-white/5">
                 {cat.title}
               </h3>
-              <div className="space-y-4">
+              <div className="space-y-3">
                 {cat.data.map((skill, i) => (
-                  <SkillBar
+                  <SkillItem
                     key={skill.title}
                     icon={skill.icon}
                     title={skill.title}
-                    level={skill.number}
+                    level={skill.level}
                     index={i}
                   />
                 ))}

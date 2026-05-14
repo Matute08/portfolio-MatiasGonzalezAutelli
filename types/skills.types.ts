@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 export interface TechnicalSkill {
   icon: ReactNode;
   title: string;
-  number: number;
+  level: string;
 }
 
 export interface SoftSkill {
